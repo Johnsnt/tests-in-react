@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render tests render using other sintax 1`] = `
+<DocumentFragment>
+  <div>
+    Render
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Render tests should take a snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    Render
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Render tests take a snapshot test (render using other sintax) 1`] = `
+<DocumentFragment>
+  <div>
+    Render
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Snapshot test should take a snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    Render
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Snapshot test take a snapshot test (render using other sintax) 1`] = `
+<DocumentFragment>
+  <div>
+    Render
+  </div>
+</DocumentFragment>
+`;
+
+exports[`should take a snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    Render
+  </div>
+</DocumentFragment>
+`;
