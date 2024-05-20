@@ -1,6 +1,5 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
-// import '@testing-library/jest-dom/extend-expect';
 import TestRouter from '../Testrouter';
 
 
@@ -41,7 +40,7 @@ describe('Router testes', () => {
   expect(screen.getByTestId('contact-link')).toBeInTheDocument();
 	})
 
-	it('Verifica se a image é exibida quando é clicado na rota Room', () => {
+	it('Verifica se a imagem é exibida quando é clicado na rota Room', () => {
 		renderComponent()
 		fireEvent.click(screen.getByTestId('room-link'))
 		expect(screen.getByAltText('Shadow_Hoppou_Image')).toBeInTheDocument();

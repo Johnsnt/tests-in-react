@@ -24,5 +24,4 @@ const Axiostest = ({ url }) => {
 	)
 }
 
-
 export default Axiostest

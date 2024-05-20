@@ -1,6 +1,5 @@
 import React from 'react';
 import { render, cleanup, fireEvent, waitFor} from '@testing-library/react';
-// import '@testing-library/jest-dom/extend-expect'
 import Asynctest from '../Asynctest';
 
 
@@ -20,4 +19,15 @@ describe("Testing asynchronous actions", () => {
 		expect(counter).toHaveTextContent("1")
 
 	});
+
+
+	it("Decrements counter after 1s", async () => {
+		const {getByTestId, getByText} = render(<Asynctest/>)
+
+		fireEvent.click(getByTestId("button-down"))
+		//setando o tempo necessário para a função funcionar
+		const counter = await waitFor(() => getByText("-1"), {timeout: 1500})
+
+		expect(counter).toHaveTextContent("-1")
+	})
 });
